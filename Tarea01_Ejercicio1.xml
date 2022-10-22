@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
 <!DOCTYPE agenda>
+<!-- En la raiz definiré los espacios de nombre 'persona' y 'empresa' para diferenciar los dos tipos de contacto que suelen haber en una agenda telefónica -->
 <agenda xmlns:persona="http://DAW/LMSGI/01/agenda/persona" xmlns:empresa="http://DAW/LMSGI/01/agenda/empresa">
 	<persona:contacto>
 		<persona:nombre>Ana</persona:nombre>
+		<!-- En lugar de crear dos etiquetas he usado la misma para el apellido pero con un atributo diferenciador. -->
 		<persona:apellido tipo="primero">Fern&#225;ndez</persona:apellido>
 		<persona:apellido tipo="segundo">Guti&#233;rrez</persona:apellido>
+		<!-- Al igual que con el apellido he usado un atributo diferenciador para la etiqueta teléfono -->
 		<persona:telefono tipo="personal">789654321</persona:telefono>
 		<persona:telefono tipo="trabajo">789654320</persona:telefono>
 		<persona:telefono tipo="casa">989654320</persona:telefono>
+		<!-- De nuevo uso un atributo diferenciador para el email por si algún contacto tiene uno personal y otro para el trabajo -->
 		<persona:email tipo="personal">ana.fdezgtrrez@hotmail.com</persona:email>
 		<persona:direccion>C&#47; El Percebe, 13</persona:direccion>
 	</persona:contacto>
 	<empresa:contacto>
-		<empresa:nombre>BK Associates SLU</empresa:nombre>
+		<empresa:nombre>Dentistas Happy Smile SL</empresa:nombre>
 		<empresa:telefono tipo="trabajo">989652400</empresa:telefono>
-		<empresa:email tipo="trabajo">info@bkassociates.com</empresa:email>
+		<empresa:email tipo="trabajo">citas@happysmile.es</empresa:email>
 		<empresa:direccion>Carrer Joan Mestre i Fortuny 24</empresa:direccion>
 	</empresa:contacto>
 </agenda>
