@@ -13,9 +13,9 @@
 			<ingrediente cantidad="100" unidad="gr.">Mantequilla</ingrediente>
 			<ingrediente cantidad="1" unidad="cd.">Harina</ingrediente>
 			<!-- En el caso de ingredientes que puedan ser sustituidos por otros he añadido el atributo 'sucedaneo'.
-			También he añadido el atributo 'tipo_prep' para especificar el tipo de preparaciÃ³n del ingrediente.-->
+			También he añadido el atributo 'tipo_prep' para especificar el tipo de preparación del ingrediente.-->
 			<ingrediente cantidad="100" unidad="gr." tipo_prep="rallado" sucedaneo="Queso gruyere">Queso emmental suizo</ingrediente>
-			<!-- En el caso del pan no uso la unidad de medida porque no procede, y sÃ­ el tipo de preparaciÃ³n. En este caso en rebanadas.
+			<!-- En el caso del pan no uso la unidad de medida porque no procede, y sí el tipo de preparación. En este caso en rebanadas.
 			En cuanto a la cantidad, he puesto una por comensal. -->
 			<ingrediente cantidad="4" tipo_prep="rebanadas">Pan tostado</ingrediente>
 			<ingrediente cantidad="1" unidad="hoja">Laurel</ingrediente>
