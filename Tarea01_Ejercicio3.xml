@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!-- Standalone posiblemente YES -->
+<!DOCTYPE DAM>
+<DAM xmlns:modulo="https://fpadistancia.caib.es/course/modulos" xmlns:alumno="https://fpadistancia.caib.es/course/alumnos">
+		<modulo:nombre id="0373" acronimo="LMSGI" horas_semana="4" fecha_inicio="15/09/2010" fecha_final="30/06/2011" tipo="obligatorio">Lenguaje de Marcas y Sistemas de Gesti&#243;n de Informaci&#243;n</modulo:nombre>	
+		<modulo:alumnos>
+				<alumno:num_identidad>16965696L</alumno:num_identidad>
+				<alumno:nombre>Ana</alumno:nombre>
+				<alumno:apellido1>Fern&#225;ndez</alumno:apellido1>
+				<alumno:apellido2>Guti&#233;rrez</alumno:apellido2>
+				<alumno:telefono1>789654321</alumno:telefono1>
+				<alumno:email>ana.fdezgtrrez@hotmail.com</alumno:email>
+				<alumno:direccion>C&#47; El Percebe, 13</alumno:direccion>
+				<alumno:CP>39302</alumno:CP>
+				<alumno:ciudad>Santander</alumno:ciudad>
+				<alumno:provincia>Cantabria</alumno:provincia>
+				<alumno:faltas_asistencia>Sin informaci&#243;n</alumno:faltas_asistencia>
+				<alumno:nota>Sin cualificar</alumno:nota>
+				<alumno:num_identidad>98765432H</alumno:num_identidad>
+				<alumno:nombre>Pepito</alumno:nombre>
+				<alumno:apellido1>Grillo</alumno:apellido1>
+				<alumno:apellido2></alumno:apellido2>
+				<alumno:telefono1>656566555</alumno:telefono1>
+				<alumno:email>yhyh@yahoo.com</alumno:email>
+				<alumno:direccion>Avd. El Pez, 5</alumno:direccion>
+				<alumno:CP>39401</alumno:CP>
+				<alumno:ciudad>Suances</alumno:ciudad>
+				<alumno:provincia>Cantabria</alumno:provincia>
+				<alumno:faltas_asistencia>0</alumno:faltas_asistencia>
+				<alumno:nota>APTO</alumno:nota>
+		</modulo:alumnos>
+</DAM>
