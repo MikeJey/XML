@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
 <!DOCTYPE recetario>
 <recetario>
-	<!-- El atributo 'tipo_plato' serviría para diferenciar los entrantes, primeros, segundos y postres. El atributo 'temp' diferenciará las comidas frías, calientes o templadas. -->
+	<!-- El atributo 'tipo_plato' servirá para diferenciar los entrantes, primeros, segundos y postres. El atributo 'temp' diferenciará las comidas frías, calientes o templadas. -->
 	<receta tipo_plato="entrante" temp="caliente">
 		<!-- El nombre de la receta, el número de personas y el nombre de los ingredientes irán diferenciados en etiquetas para simplificar la búsqueda. -->
 		<nombre>Sopa de cebolla</nombre>
@@ -13,9 +13,9 @@
 			<ingrediente cantidad="100" unidad="gr.">Mantequilla</ingrediente>
 			<ingrediente cantidad="1" unidad="cd.">Harina</ingrediente>
 			<!-- En el caso de ingredientes que puedan ser sustituidos por otros he añadido el atributo 'sucedaneo'.
-			También he añadido el atributo 'tipo_prep' para especificar el tipo de preparación del ingrediente.-->
+			También he añadido el atributo 'tipo_prep' para especificar el tipo de preparaciÃ³n del ingrediente.-->
 			<ingrediente cantidad="100" unidad="gr." tipo_prep="rallado" sucedaneo="Queso gruyere">Queso emmental suizo</ingrediente>
-			<!-- En el caso del pan no uso la unidad de medida porque no procede, y sí el tipo de preparación. En este caso en rebanadas.
+			<!-- En el caso del pan no uso la unidad de medida porque no procede, y sÃ­ el tipo de preparaciÃ³n. En este caso en rebanadas.
 			En cuanto a la cantidad, he puesto una por comensal. -->
 			<ingrediente cantidad="4" tipo_prep="rebanadas">Pan tostado</ingrediente>
 			<ingrediente cantidad="1" unidad="hoja">Laurel</ingrediente>
@@ -25,8 +25,8 @@
 		<preparacion>
 			<!-- La única información relevante para la tarea en cuanto a la preparación ha sido establecer un orden mediante un atributo diferenciador. -->
 			<paso numero="1">Pelar y partir las cebollas en rodajas finas.</paso>
-			<paso numero="2">Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que est&#233;n transparentes sin dorarse.</paso>
-			<paso numero="3">A&#241;adir la harina sin dejar de remover.</paso>
+			<paso numero="2">Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse.</paso>
+			<paso numero="3">Añadir la harina sin dejar de remover.</paso>
 			<paso numero="4">Ponerlo en una cazuela con el caldo, el tomillo y el laurel.</paso>
 			<paso numero="5">Dejar cocer a fuego lento durante unos 15 minutos.</paso>
 			<paso numero="6">Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</paso>
