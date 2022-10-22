@@ -1,32 +1,42 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
-<!-- Standalone posiblemente YES -->
-<!DOCTYPE DAM>
-<DAM xmlns:modulo="https://fpadistancia.caib.es/course/modulos" xmlns:alumno="https://fpadistancia.caib.es/course/alumnos">
-		<modulo:nombre id="0373" acronimo="LMSGI" horas_semana="4" fecha_inicio="15/09/2010" fecha_final="30/06/2011" tipo="obligatorio">Lenguaje de Marcas y Sistemas de Gesti&#243;n de Informaci&#243;n</modulo:nombre>	
-		<modulo:alumnos>
-				<alumno:num_identidad>16965696L</alumno:num_identidad>
-				<alumno:nombre>Ana</alumno:nombre>
-				<alumno:apellido1>Fern&#225;ndez</alumno:apellido1>
-				<alumno:apellido2>Guti&#233;rrez</alumno:apellido2>
-				<alumno:telefono1>789654321</alumno:telefono1>
-				<alumno:email>ana.fdezgtrrez@hotmail.com</alumno:email>
-				<alumno:direccion>C&#47; El Percebe, 13</alumno:direccion>
-				<alumno:CP>39302</alumno:CP>
-				<alumno:ciudad>Santander</alumno:ciudad>
-				<alumno:provincia>Cantabria</alumno:provincia>
-				<alumno:faltas_asistencia>Sin informaci&#243;n</alumno:faltas_asistencia>
-				<alumno:nota>Sin cualificar</alumno:nota>
-				<alumno:num_identidad>98765432H</alumno:num_identidad>
-				<alumno:nombre>Pepito</alumno:nombre>
-				<alumno:apellido1>Grillo</alumno:apellido1>
-				<alumno:apellido2></alumno:apellido2>
-				<alumno:telefono1>656566555</alumno:telefono1>
-				<alumno:email>yhyh@yahoo.com</alumno:email>
-				<alumno:direccion>Avd. El Pez, 5</alumno:direccion>
-				<alumno:CP>39401</alumno:CP>
-				<alumno:ciudad>Suances</alumno:ciudad>
-				<alumno:provincia>Cantabria</alumno:provincia>
-				<alumno:faltas_asistencia>0</alumno:faltas_asistencia>
-				<alumno:nota>APTO</alumno:nota>
-		</modulo:alumnos>
-</DAM>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE modulo>
+<!-- Para este ejercicio considero que la etiqueta raíz debe ser el módulo que va a contener los alumnos registrados al mismo. 
+Como atributo especifico algunos valores como puedan ser el ID de la asignatura, el acrónimo o el ciclo formativo al que pertenece. -->
+<modulo id="0373" acronimo="LMSGI" cicloformativo="DAM" xmlns:asignatura="https://fpadistancia.caib.es/DAM/asignaturas" xmlns:estudiante="https://fpadistancia.caib.es/DAM/estudiantes">
+	<!-- Para diferenciar los atributos del módulo y de los alumnos usaré los espacios de nombres 'asignatura' y 'estudiante' respectivamente. -->
+	<asignatura:nombre>Lenguaje de Marcas y Sistemas de Gestión de Información</asignatura:nombre>
+	<asignatura:fecha_inicio>15/09/2010</asignatura:fecha_inicio>
+	<asignatura:fecha_fin>30/06/2011</asignatura:fecha_fin>
+	<asignatura:horas_semana>4</asignatura:horas_semana>
+	<asignatura:tipo>Obligatorio</asignatura:tipo>
+	<!-- En la siguiente etiqueta estarán todos los estudiantes, y dentro de cada uno de ellos se usará el espacio de nombre 'estudiante' para diferenciarlo del módulo. -->
+	<estudiantes>
+		<!-- Con el fin de darle un valor único a cada alumno he usado el atributo 'doc_identidad' para insertar el DNI/NIE/Pasaporte del alumno en cuestión. -->
+		<estudiante:alumno doc_identidad="16965696L">
+			<estudiante:nombre>Ana</estudiante:nombre>
+			<!-- Para diferenciar los apellidos en lugar de cambiar la etiqueta añado un atributo diferenciador. -->
+			<estudiante:apellido tipo="primero">Fernández</estudiante:apellido>
+			<estudiante:apellido tipo="segundo">Gutiérrez</estudiante:apellido>
+			<!-- Lo mismo hago con el teléfono, por si tuviera otro número (el de casa p. ej.) -->
+			<estudiante:telefono tipo="personal">789654321</estudiante:telefono>
+			<estudiante:email>ana.fdezgtrrez@hotmail.com</estudiante:email>
+			<!-- Para acortar la sintaxis he incluido el atributo 'cpostal' dentro de la etiqueta 'direccion' y el atributo 'provincia' dentro de la etiqueta 'ciudad'. -->
+			<estudiante:direccion cpostal="39302">Calle El Percebe, 13</estudiante:direccion>
+			<estudiante:ciudad provincia="Cantabria">Santander</estudiante:ciudad>
+			<estudiante:faltas_asistencia>Sin información</estudiante:faltas_asistencia>
+			<estudiante:nota>Sin cualificar</estudiante:nota>
+		</estudiante:alumno>
+		<estudiante:alumno doc_identidad="98765432H">
+			<estudiante:nombre>Pepito</estudiante:nombre>
+			<estudiante:apellido tipo="primero">Grillo</estudiante:apellido>
+			<!-- A pesar de estar vació, añado el segundo apellido para dejar claro que no tiene o no se conoce esta información. -->
+			<estudiante:apellido tipo="segundo"></estudiante:apellido>
+			<estudiante:telefono tipo="personal">656566555</estudiante:telefono>
+			<estudiante:email>yhyh@yahoo.com</estudiante:email>
+			<estudiante:direccion cpostal="39401">Avd. El Pez, 5</estudiante:direccion>
+			<estudiante:ciudad provincia="Cantabria">Suances</estudiante:ciudad>
+			<estudiante:faltas_asistencia>0</estudiante:faltas_asistencia>
+			<estudiante:nota>APTO</estudiante:nota>
+		</estudiante:alumno>
+	</estudiantes>
+</modulo>
