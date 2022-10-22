@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE agenda>
-<!-- En la raiz definiré los espacios de nombre 'persona' y 'empresa' para diferenciar los dos tipos de contacto que suelen haber en una agenda telefónica -->
+<!-- En la raíz definiré los espacios de nombre 'persona' y 'empresa' para diferenciar los dos tipos de contacto que suelen haber en una agenda telefónica -->
 <agenda xmlns:persona="http://DAW/LMSGI/01/agenda/persona" xmlns:empresa="http://DAW/LMSGI/01/agenda/empresa">
 	<persona:contacto>
 		<persona:nombre>Ana</persona:nombre>
