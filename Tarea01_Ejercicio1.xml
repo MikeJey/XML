@@ -19,6 +19,6 @@
 		<empresa:nombre>Dentistas Happy Smile SL</empresa:nombre>
 		<empresa:telefono tipo="trabajo">989652400</empresa:telefono>
 		<empresa:email tipo="trabajo">citas@happysmile.es</empresa:email>
-		<empresa:direccion>Carrer Joan Mestre i Fortuny 24</empresa:direccion>
+		<empresa:direccion>C&#47; Joan Mestre i Fortuny 24</empresa:direccion>
 	</empresa:contacto>
 </agenda>
